@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 
 import 'constants.dart';
 
@@ -41,10 +42,10 @@ TextTheme textTheme() {
 AppBarTheme appBarTheme() {
   return AppBarTheme(
     color: Colors.white,
-    brightness: Brightness.light,
-    iconTheme: IconThemeData(color: Colors.black),
-    textTheme: TextTheme(
+    iconTheme: IconThemeData(color: Colors.black), toolbarTextStyle: TextTheme(
       headline6: TextStyle(color: Color(0XFF8B8B8B), fontSize: 18),
-    ),
+    ).bodyText2, titleTextStyle: TextTheme(
+      headline6: TextStyle(color: Color(0XFF8B8B8B), fontSize: 18),
+    ).headline6, systemOverlayStyle: SystemUiOverlayStyle.dark,
   );
 }

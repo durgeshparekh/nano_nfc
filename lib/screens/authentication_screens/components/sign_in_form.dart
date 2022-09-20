@@ -96,7 +96,13 @@ class _SignInFormState extends State<SignInForm> {
                     if (_formKey.currentState!.validate()) {
                       _formKey.currentState!.save();
                       // if all are valid then go to success screen
-                      _signInUser();
+                      // _signInUser();
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (buildContext) => MainNavigationScreen(),
+                        ),
+                      );
                     }
                   },
                 ),
