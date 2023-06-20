@@ -40,7 +40,8 @@ class _HomeScreenState extends State<HomeScreen> {
             : SingleChildScrollView(
                 child: Column(
                   children: [
-                    CircularUserImage(modelUser: userBox.getAt(0)!),
+                    // CircularUserImage(modelUser: userBox.getAt(0)!),
+                    CircularUserImage(modelUser: ModelUser()),
                     const SizedBox(height: 20),
                     LinksGridList(),
                   ],

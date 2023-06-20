@@ -16,7 +16,7 @@ class SettingsScreen extends StatefulWidget {
 }
 
 class _SettingsScreenState extends State<SettingsScreen> {
-  late ModelUser modelUser = new ModelUser();
+  ModelUser modelUser = new ModelUser();
   Box<ModelUser> userBox = Hive.box(user);
 
   @override
@@ -30,7 +30,8 @@ class _SettingsScreenState extends State<SettingsScreen> {
       body: Column(
         children: [
           EditCircularUserImage(
-            modelUser: userBox.getAt(0)!,
+            // modelUser: userBox.getAt(0),
+            modelUser: ModelUser(),
             editUserCallback: () {
               //
             },
